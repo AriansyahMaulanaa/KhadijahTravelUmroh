@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Khadijah | Travel Indonesia</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+              <i class="text-white w-6 h-6" data-lucide="plane"></i>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-800">Khadijah Travel Indonesia</h1>
+              <p class="text-xs text-blue-600 font-medium">Travel Umroh Pilihan Keluarga Indonesia</p>
+            </div>
+          </div>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a class="text-blue-600 font-medium hover:text-blue-800 transition-colors" href="#home">Beranda</a>
+          <a class="text-gray-600 hover:text-blue-600 transition-colors" href="#packages">Paket</a>
+          <a class="text-gray-600 hover:text-blue-600 transition-colors" href="#about">Tentang</a>
+          <a class="text-gray-600 hover:text-blue-600 transition-colors" href="#testimonials">Testimoni</a>
+          <a class="text-gray-600 hover:text-blue-600 transition-colors" href="#contact">Kontak</a>
+        </nav>
+        <button class="md:hidden p-2 rounded-lg hover:bg-blue-100 transition-colors" id="menu-toggle">
+          <i class="text-gray-600 w-6 h-6" data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+      <div class="px-4 py-2 space-y-2">
+        <a class="block py-2 text-gray-600 hover:text-blue-600" href="#home">Beranda</a>
+        <a class="block py-2 text-gray-600 hover:text-blue-600" href="#packages">Paket</a>
+        <a class="block py-2 text-gray-600 hover:text-blue-600" href="#about">Tentang</a>
+        <a class="block py-2 text-gray-600 hover:text-blue-600" href="#testimonials">Testimoni</a>
+        <a class="block py-2 text-gray-600 hover:text-blue-600" href="#contact">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-16 pb-20" id="home">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 animate-fade-in" style="animation-delay: 0.1s">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-4">
+            <i class="w-4 h-4 mr-2 fill-current" data-lucide="star"></i>
+            bersertifikat resmi dari Kemenag
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+            Perjalanan <span class="text-blue-600">Umroh</span> yang <span class="text-blue-600">Indah</span>
+          </h1>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            Temukan kedamaian dan keberkahan bersama travel umroh terpercaya. Layanan premium dengan harga terjangkau untuk perjalanan spiritual Anda.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl" onclick="scrollToSection('packages')">
+              Lihat Paket Umroh
+            </button>
+            <button class="border-2 border-blue-500 text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all">
+              Konsultasi Gratis
+            </button>
+          </div>
+        </div>
+        <div class="relative animate-fade-in" style="animation-delay: 0.3s">
+          <img alt="Kaaba" class="rounded-3xl shadow-2xl w-full" src= "assets/photo/kabah.jpg" />
+          <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl w-64">
+            <div class="flex items-center mb-2">
+              <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+              <span class="text-sm font-medium text-gray-700">Live Status</span>
+            </div>
+            <div class="text-2xl font-bold text-gray-800 mb-1">24°C</div>
+            <p class="text-gray-600 text-sm">Makkah, Saudi Arabia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 bg-white" id="about">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Mengapa Memilih <span class="text-blue-600">Khadijah Travel Indonesia</span>?
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Kami berkomitmen memberikan pelayanan terbaik untuk perjalanan spiritual Anda
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 border border-blue-100 card-hover">
+          <div class="text-blue-600 mb-4">
+            <i class="w-8 h-8" data-lucide="shield"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Licensed &amp; Certified</h3>
+          <p class="text-gray-600">Resmi terdaftar di Kementerian Agama RI dengan izin operasional lengkap</p>
+        </div>
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 border border-blue-100 card-hover">
+          <div class="text-blue-600 mb-4">
+            <i class="w-8 h-8" data-lucide="award"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Best Service Award</h3>
+          <p class="text-gray-600">Mendapatkan penghargaan pelayanan terbaik selama 5 tahun berturut-turut</p>
+        </div>
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 border border-blue-100 card-hover">
+          <div class="text-blue-600 mb-4">
+            <i class="w-8 h-8" data-lucide="users"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Experienced Guides</h3>
+          <p class="text-gray-600">Pemandu berpengalaman dan bersertifikat resmi dari Kemenag</p>
+        </div>
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 border border-blue-100 card-hover">
+          <div class="text-blue-600 mb-4">
+            <i class="w-8 h-8" data-lucide="trending-up"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">99% Satisfaction</h3>
+          <p class="text-gray-600">Tingkat kepuasan jamaah mencapai 99% berdasarkan survei tahunan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="py-20 bg-gradient-to-b from-cyan-50 to-blue-50" id="packages">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Paket <span class="text-blue-600">Umroh</span> Terbaik
+        </h2>
+        <p class="text-xl text-gray-600">
+          Pilih paket yang sesuai dengan kebutuhan dan budget Anda
+        </p>
+      </div>
+      <!-- Search -->
+      <div class="max-w-2xl mx-auto mb-8">
+        <div class="relative">
+          <i class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" data-lucide="search"></i>
+          <input class="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-200 focus:border-blue-500 outline-none transition-all" id="search-input" placeholder="Cari paket umroh, tanggal keberangkatan..." type="text" />
+          <i class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" data-lucide="filter"></i>
+        </div>
+      </div>
+      <!-- Packages Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="packages-container">
+        <!-- Packages will be inserted by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-white" id="testimonials">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Testimoni <span class="text-blue-600">Jamaah</span>
+        </h2>
+        <p class="text-xl text-gray-600">
+          Pengalaman berharga dari jamaah yang telah berangkat bersama kami
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <img class="w-16 h-16 rounded-full object-cover mr-4" src="https://placehold.co/80x80/4a90e2/ffffff?text=AF" />
+            <div>
+              <h4 class="font-bold text-gray-800">Ahmad Fauzi</h4>
+              <p class="text-blue-600 text-sm">Jakarta</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+          </div>
+          <p class="text-gray-700 italic">"Pengalaman umroh yang luar biasa! Pemandu sangat profesional dan perhatian terhadap jamaah."</p>
+          <div class="mt-6 pt-6 border-t border-blue-100">
+            <div class="flex items-center text-sm text-blue-600">
+              <i class="w-4 h-4 mr-2 fill-current" data-lucide="heart"></i>
+              <span>Sangat Direkomendasikan</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <img class="w-16 h-16 rounded-full object-cover mr-4" src="https://placehold.co/80x80/3a7bd5/ffffff?text=SN" />
+            <div>
+              <h4 class="font-bold text-gray-800">Siti Nurhaliza</h4>
+              <p class="text-blue-600 text-sm">Surabaya</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+          </div>
+          <p class="text-gray-700 italic">"Hotel dekat Masjidil Haram, pelayanan prima, dan manasik yang sangat membantu."</p>
+          <div class="mt-6 pt-6 border-t border-blue-100">
+            <div class="flex items-center text-sm text-blue-600">
+              <i class="w-4 h-4 mr-2 fill-current" data-lucide="heart"></i>
+              <span>Sangat Direkomendasikan</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <img class="w-16 h-16 rounded-full object-cover mr-4" src="https://placehold.co/80x80/2c5aa0/ffffff?text=BS" />
+            <div>
+              <h4 class="font-bold text-gray-800">Budi Santoso</h4>
+              <p class="text-blue-600 text-sm">Bandung</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            <i class="w-5 h-5 text-gray-300" data-lucide="star"></i>
+          </div>
+          <p class="text-gray-700 italic">"Perjalanan umroh yang nyaman dan terorganisir dengan baik. Sangat direkomendasikan!"</p>
+          <div class="mt-6 pt-6 border-t border-blue-100">
+            <div class="flex items-center text-sm text-blue-600">
+              <i class="w-4 h-4 mr-2 fill-current" data-lucide="heart"></i>
+              <span>Sangat Direkomendasikan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          Siap Memulai Perjalanan Spiritual Anda?
+        </h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran spesial
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <button class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-lg">
+            <i class="w-5 h-5 inline mr-2" data-lucide="phone"></i>
+            +62 895-8083-62677
+          </button>
+          <!-- ✅ WhatsApp button fixed -->
+          <a href="https://wa.me/6281234567890?text=Halo%20Al-Ariansyah%2C%20saya%20tertarik%20dengan%20paket%20umroh." 
+             target="_blank"
+             class="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition-all shadow-lg flex items-center justify-center">
+            <i class="w-5 h-5 inline mr-2" data-lucide="message-circle"></i>
+            Chat WhatsApp
+          </a>
+        </div>
+        <div class="flex justify-center space-x-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-white">50,000+</div>
+            <div class="text-blue-200">Jamaah Berangkat</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-white">12+</div>
+            <div class="text-blue-200">Tahun Pengalaman</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-white">99%</div>
+            <div class="text-blue-200">Tingkat Kepuasan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16" id="contact">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
+              <i class="w-6 h-6" data-lucide="plane"></i>
+            </div>
+            <h3 class="text-xl font-bold">Khadijah Travel Indonesia</h3>
+          </div>
+          <p class="text-gray-400 mb-4">
+            Travel umroh terpercaya sejak 2013, memberikan pelayanan terbaik untuk perjalanan spiritual Anda.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Paket Umroh</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a class="hover:text-white transition-colors" href="#">Umroh Reguler</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Umroh Ramadhan</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Umroh Plus Turki</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Umroh Hemat</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Umroh Eksekutif</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Kontak Kami</h4>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center">
+              <i class="w-5 h-5 mr-3 text-blue-400" data-lucide="map-pin"></i>
+              <span>Jl. Cipondoh, Tangerang </span>
+            </div>
+            <div class="flex items-center">
+              <i class="w-5 h-5 mr-3 text-blue-400" data-lucide="phone"></i>
+              <span>+62 895-8083-62677</span>
+            </div>
+            <div class="flex items-center">
+              <i class="w-5 h-5 mr-3 text-blue-400" data-lucide="mail"></i>
+              <span>khadijahtravel@gmail.com</span>
+            </div>
+            <div class="flex items-center">
+              <i class="w-5 h-5 mr-3 text-blue-400" data-lucide="clock"></i>
+              <span>Senin - Sabtu: 08.00 - 17.00</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+          <p class="text-gray-400 mb-4">
+            Dapatkan informasi promo dan paket terbaru langsung ke email Anda
+          </p>
+          <div class="flex">
+            <input class="px-4 py-2 w-full rounded-l-lg text-gray-800 focus:outline-none" placeholder="Email Anda" type="email" />
+            <button class="bg-blue-600 hover:bg-blue-700 px-4 rounded-r-lg transition-colors">
+              <i class="w-5 h-5" data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>© 2025 Khadijah Travel Indonesia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Template (Hidden by default) -->
+  <div class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50" id="package-modal">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="relative">
+        <img alt="" class="w-full h-64 object-cover rounded-t-3xl" id="modal-img" src="" />
+        <button class="absolute top-4 right-4 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 transition-all" id="close-modal">
+          <i class="w-6 h-6" data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="p-6">
+        <h2 class="text-2xl font-bold text-gray-800" id="modal-title"></h2>
+        <div class="flex justify-between items-start mt-2">
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+              <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+              <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+              <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+              <i class="w-5 h-5 text-yellow-400 fill-current" data-lucide="star"></i>
+            </div>
+            <span class="ml-2 text-sm text-gray-600" id="modal-reviews">(128 ulasan)</span>
+          </div>
+          <div class="text-right">
+            <div class="text-3xl font-bold text-blue-600" id="modal-price"></div>
+            <div class="text-sm text-gray-500" id="modal-meta">9 Hari • 15 Desember 2025</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 my-6">
+          <div class="bg-blue-50 p-4 rounded-xl">
+            <h3 class="font-semibold text-blue-800 mb-2">Hotel Makkah</h3>
+            <p class="text-gray-700" id="modal-makkah">Al Safwah Royale Orchid</p>
+          </div>
+          <div class="bg-green-50 p-4 rounded-xl">
+            <h3 class="font-semibold text-green-800 mb-2">Hotel Madinah</h3>
+            <p class="text-gray-700" id="modal-madinah">Dar Al Iman</p>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-gray-800 mb-3">Fasilitas Termasuk:</h3>
+        <div class="grid grid-cols-2 gap-2 mb-6" id="modal-includes"></div>
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl p-6 text-white">
+          <h3 class="text-xl font-bold mb-3">Siap Berangkat Umroh?</h3>
+          <p class="mb-4 opacity-90">Hubungi kami sekarang untuk pendaftaran dan konsultasi gratis!</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button class="flex-1 bg-white text-blue-600 font-bold py-3 rounded-xl flex items-center justify-center">
+              <i class="w-5 h-5 mr-2" data-lucide="phone"></i>
+              Hubungi Sekarang
+            </button>
+            <!-- ✅ WhatsApp button fixed in modal too -->
+            <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20paket%20ini%2C%20bisa%20dibantu%3F" 
+               target="_blank"
+               class="flex-1 bg-blue-700 font-bold py-3 rounded-xl flex items-center justify-center text-white">
+              <i class="w-5 h-5 mr-2" data-lucide="message-circle"></i>
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
